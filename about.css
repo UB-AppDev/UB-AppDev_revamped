@@ -1,0 +1,300 @@
+/* About Page Specific Styles */
+
+/* Hero Images Section */
+.hero-images {
+    padding: 120px 0 60px;
+    background: #f8fafc;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    height: 300px;
+}
+
+.image-card {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-card.large {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+    padding: 2rem;
+}
+
+.image-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.image-overlay p {
+    opacity: 0.9;
+}
+
+/* Mission Statement */
+.mission-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.mission-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+    line-height: 1.2;
+}
+
+.mission-content p {
+    font-size: 1.2rem;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+/* Our Mission */
+.our-mission {
+    padding: 80px 0;
+    background: #fef3c7;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.mission-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.mission-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.mission-text p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+.team-header p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.member-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.member-info p {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* Advisors Section */
+.advisors-section {
+    padding: 80px 0;
+    background: #f9fafb;
+}
+
+.advisors-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
+    text-align: center;
+}
+
+.advisors-section > p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.7;
+}
+
+.advisors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.advisor {
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.advisor img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.advisor-info h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.advisor-info p {
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 768px) {
+    .images-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 1rem;
+    }
+    
+    .image-card {
+        height: 200px;
+    }
+    
+    .mission-content h1 {
+        font-size: 2rem;
+    }
+    
+    .mission-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .team-member {
+        padding: 1rem;
+    }
+    
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .advisors-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .advisor {
+        padding: 1.5rem;
+    }
+    
+    .advisor img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .team-header h2,
+    .advisors-section h2,
+    .mission-text h2 {
+        font-size: 2rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
