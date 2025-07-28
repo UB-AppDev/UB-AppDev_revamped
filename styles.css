@@ -154,6 +154,14 @@ body {
     height: 110px;
 }
 
+.duck-icon {
+    top: 45%;
+    right: 15%;
+    animation-delay: 5s;
+    width: 85px;
+    height: 85px;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
@@ -496,5 +504,12 @@ body {
         top: 10%;
         width: 55px;
         height: 55px;
+    }
+
+    .duck-icon {
+        right: 20%;
+        top: 40%;
+        width: 40px;
+        height: 40px;
     }
 }
