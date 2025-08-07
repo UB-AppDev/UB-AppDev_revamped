@@ -8,6 +8,8 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -77,17 +79,27 @@ body {
 .hero {
     background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
     color: white;
-    padding: 120px 0 80px;
+    height: 100vh;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* Account for navbar height */
+    box-sizing: border-box;
 }
 
 .hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-icons {
@@ -116,14 +128,14 @@ body {
 
 .code-icon {
     top: 15%;
-    left: 1%;
+    left: 5%;
     animation-delay: 0s;
     width: 100px;
     height: 100px;
 }
 
 .headphones-icon {
-    top: 45%;
+    top: 75%;
     left: 15%;
     animation-delay: 1s;
     width: 90px;
@@ -131,16 +143,16 @@ body {
 }
 
 .id-icon {
-    bottom: 5%;
-    left: 2%;
+    top: 45%;
+    left: 10%;
     animation-delay: 2s;
     width: 85px;
     height: 85px;
 }
 
 .bull-icon {
-    bottom: 5%;
-    right: 5%;
+    top: 75%;
+    right: 15%;
     animation-delay: 3s;
     width: 100px;
     height: 100px;
@@ -148,7 +160,7 @@ body {
 
 .laptop-icon {
     top: 15%;
-    right: 1%;
+    right: 5%;
     animation-delay: 4s;
     width: 110px;
     height: 110px;
@@ -156,7 +168,7 @@ body {
 
 .duck-icon {
     top: 45%;
-    right: 15%;
+    right: 10%;
     animation-delay: 5s;
     width: 85px;
     height: 85px;
