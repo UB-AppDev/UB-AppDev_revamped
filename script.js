@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     //buttons
     document.getElementById('explore-btn').onclick = function() {
-        window.location.href = '/index.html#projects';
+        window.location.href = "index.html#projects";
     };
 
     // Join button handlers with error checking
@@ -133,6 +133,12 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     } else {
         console.log('join2-btn not found');
+    }
+    const join2UsBtn = document.getElementById('join2us-btn');
+    if (join2UsBtn) {
+        join2UsBtn.onclick = function() {
+            window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
+        };
     }
 });
 
