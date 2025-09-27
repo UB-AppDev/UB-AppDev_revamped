@@ -115,6 +115,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('join-us-btn').onclick = function() {
         window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
     };
+    document.getElementById('join2-btn').onclick = function() {
+        window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
+    };
 });
 
 
