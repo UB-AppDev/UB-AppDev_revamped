@@ -104,7 +104,19 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenu.classList.toggle('active');
         });
     }
+    //buttons
+    document.getElementById('explore-btn').onclick = function() {
+        window.location.href = '/hero.html';
+    };
+
+    document.getElementById('join-btn').onclick = function() {
+        window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
+    };
+    document.getElementById('join-us-btn').onclick = function() {
+        window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
+    };
 });
+
 
 // Add CSS for ripple effect
 const style = document.createElement('style');
