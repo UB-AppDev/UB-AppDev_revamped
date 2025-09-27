@@ -109,15 +109,31 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = '/hero.html';
     };
 
-    document.getElementById('join-btn').onclick = function() {
-        window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
-    };
-    document.getElementById('join-us-btn').onclick = function() {
-        window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
-    };
-    document.getElementById('join2-btn').onclick = function() {
-        window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
-    };
+    // Join button handlers with error checking
+    const joinBtn = document.getElementById('join-btn');
+    if (joinBtn) {
+        joinBtn.onclick = function() {
+            window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
+        };
+    }
+
+    const joinUsBtn = document.getElementById('join-us-btn');
+    if (joinUsBtn) {
+        joinUsBtn.onclick = function() {
+            window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
+        };
+    }
+    // Join2 button handler with error checking
+    const join2Btn = document.getElementById('join2-btn');
+    if (join2Btn) {
+        console.log('Found join2-btn, attaching click handler');
+        join2Btn.onclick = function() {
+            console.log('join2-btn clicked, redirecting to Discord');
+            window.location.href = 'https://discord.com/invite/SBEFtjqmuF';
+        };
+    } else {
+        console.log('join2-btn not found');
+    }
 });
 
 

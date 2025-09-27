@@ -199,5 +199,20 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+        // Direct script for join2-btn button
+        document.addEventListener('DOMContentLoaded', function() {
+            const joinBtn = document.getElementById('join2-btn');
+            if (joinBtn) {
+                console.log('Direct script: Found join2-btn button');
+                joinBtn.addEventListener('click', function(e) {
+                    console.log('Direct script: join2-btn clicked');
+                    window.open('https://discord.com/invite/SBEFtjqmuF', '_blank');
+                });
+            } else {
+                console.log('Direct script: join2-btn button not found');
+            }
+        });
+    </script>
 </body>
 </html>
