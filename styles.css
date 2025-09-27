@@ -245,6 +245,19 @@ body {
     color: #2563eb;
 }
 
+/* Better contrast for outline buttons in about section */
+.about-section .btn-outline {
+    background: transparent;
+    color: #1f2937;
+    border: 2px solid #1f2937;
+    font-weight: 600;
+}
+
+.about-section .btn-outline:hover {
+    background: #1f2937;
+    color: white;
+}
+
 .btn-small {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
