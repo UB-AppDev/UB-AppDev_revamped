@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     //buttons
     document.getElementById('explore-btn').onclick = function() {
-        window.location.href = '/hero.html';
+        window.location.href = '/index.html#projects';
     };
 
     // Join button handlers with error checking
